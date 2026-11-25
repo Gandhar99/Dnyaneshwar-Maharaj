@@ -1,25 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="mr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>संत ज्ञानेश्वर महाराज</title>
-<style>
-  html{background:#f6efe2;color:#2b2118}
-  body{margin:0;min-height:100vh;display:grid;place-items:center;font-family:"Tiro Devanagari Marathi","Noto Serif Devanagari","Nirmala UI",serif;text-align:center;padding:2rem}
-  h1{font-size:clamp(1.8rem,7vw,3rem);font-weight:500;margin:0 0 .6rem}
-  p{margin:.3rem 0;font-size:1.1rem;line-height:1.7}
-  .en{font-family:Georgia,serif;font-size:.95rem;color:#6b5a48}
-  hr{width:4rem;border:0;border-top:2px solid #c9661a;margin:1.2rem auto}
-  @media (prefers-color-scheme:dark){html{background:#1c1612;color:#efe6d6}.en{color:#b9a892}}
-</style>
+<meta name="description" content="संत ज्ञानेश्वर महाराज: ज्ञानेश्वरी, अभंग, चरित्र, स्थळे आणि पुरावे. Sant Dnyaneshwar: texts, poems, life, places and evidence.">
+<meta name="theme-color" content="#F1E7D0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#18130E" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/img/pataka.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/TiroDevanagariMarathi-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Mukta-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="modulepreload" href="assets/js/app.js">
+<link rel="modulepreload" href="modules/home/index.js">
+<script>
+  // apply saved language and theme before first paint (no flash)
+  try { var l = localStorage.getItem('dny.lang'); if (l) document.documentElement.lang = l;
+        var th = localStorage.getItem('dny.theme'); if (th) document.documentElement.dataset.theme = th; } catch (e) {}
+</script>
 </head>
 <body>
-<main>
-  <h1>संत ज्ञानेश्वर महाराज</h1>
-  <hr>
-  <p>हे संकेतस्थळ तयार होत आहे. लवकरच येथे उपलब्ध होईल.</p>
-  <p class="en" lang="en">A portal on Sant Dnyaneshwar Maharaj is being prepared and will open here soon.</p>
-</main>
+<a class="skip" id="skip" href="#main">मुख्य मजकुराकडे जा</a>
+<header class="top" id="top"></header>
+<main id="main" tabindex="-1"><div class="page"><p class="loading">…</p></div></main>
+<footer class="foot" id="foot"></footer>
+<nav class="bar" id="bar" aria-label="मुख्य"></nav>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title"><div class="scrim"></div><div class="panel"></div></div>
+<noscript><p style="padding:1rem">हे संकेतस्थळ वाचण्यासाठी JavaScript सुरू करा. Please enable JavaScript to read this site.</p></noscript>
+<script type="module" src="assets/js/app.js"></script>
 </body>
 </html>

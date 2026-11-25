@@ -1,0 +1,636 @@
+{
+ "export_date": "2026-11-25T16:09:15Z",
+ "source_db": "dnyaneshwar_portal.sqlite",
+ "source_db_mtime": "2026-11-25T14:48:22Z",
+ "rights_rule": {
+  "full_text_editions": [
+   "DNYC-E01"
+  ],
+  "older_package_documents": "full text",
+  "other_witnesses": "incipit only"
+ },
+ "table_counts": {
+  "building_phases": 8,
+  "catalogue_items": 97,
+  "claims": 24,
+  "classical_sources": 80,
+  "composition_reading": 1424,
+  "composition_witnesses": 2898,
+  "compositions": 1424,
+  "corpus_census": 4,
+  "coverage": 58,
+  "cross_reference_segments": 19,
+  "cross_references": 18,
+  "date_claims": 34,
+  "dialogues": 241,
+  "dindis_and_fads": 1,
+  "disputes": 18,
+  "documents": 26,
+  "editions": 8,
+  "entities": 21,
+  "events": 19,
+  "exclusions": 18,
+  "glossary": 230,
+  "historical_chunks": 460,
+  "historical_documents": 3,
+  "iconography": 7,
+  "institutions": 1,
+  "itineraries": 29,
+  "liturgical_use": 4,
+  "manuscripts": 4,
+  "material_culture": 82,
+  "media_items": 2,
+  "memorial_spots": 7,
+  "narrated_by_others": 902,
+  "observances": 11,
+  "palkhi_stages": 34,
+  "places": 23,
+  "profile": 36,
+  "quality": 4,
+  "reading_cards": 18,
+  "reception": 18,
+  "recordings": 1,
+  "relationships": 24,
+  "scripture_refs": 10052,
+  "search_log": 71,
+  "segment_divine_names": 3368,
+  "segment_people": 3016,
+  "segment_places": 294,
+  "segment_topics": 8927,
+  "segments": 13943,
+  "sources": 193,
+  "text_issues": 1622,
+  "topics": 20,
+  "translations_and_meanings": 4,
+  "web_discoveries": 99,
+  "works": 89
+ },
+ "total_bytes": 16622201,
+ "files": {
+  "life.json": {
+   "rows": 156,
+   "bytes": 59067
+  },
+  "places.json": {
+   "rows": 68,
+   "bytes": 42005
+  },
+  "calendar.json": {
+   "rows": 44,
+   "bytes": 58509
+  },
+  "texts/works.json": {
+   "rows": 143,
+   "bytes": 85593
+  },
+  "topics.json": {
+   "rows": 20,
+   "bytes": 8672
+  },
+  "words/glossary.json": {
+   "rows": 230,
+   "bytes": 187823
+  },
+  "words/glossary_terms.json": {
+   "rows": 230,
+   "bytes": 44110
+  },
+  "words/material_culture.json": {
+   "rows": 82,
+   "bytes": 30123
+  },
+  "texts/dnyaneshwari/ch01.json": {
+   "rows": 321,
+   "bytes": 93519
+  },
+  "texts/dnyaneshwari/ch02.json": {
+   "rows": 446,
+   "bytes": 134482
+  },
+  "texts/dnyaneshwari/ch03.json": {
+   "rows": 318,
+   "bytes": 95269
+  },
+  "texts/dnyaneshwari/ch04.json": {
+   "rows": 266,
+   "bytes": 81883
+  },
+  "texts/dnyaneshwari/ch05.json": {
+   "rows": 208,
+   "bytes": 63993
+  },
+  "texts/dnyaneshwari/ch06.json": {
+   "rows": 540,
+   "bytes": 164397
+  },
+  "texts/dnyaneshwari/ch07.json": {
+   "rows": 240,
+   "bytes": 47520
+  },
+  "texts/dnyaneshwari/ch08.json": {
+   "rows": 295,
+   "bytes": 94011
+  },
+  "texts/dnyaneshwari/ch09-1.json": {
+   "rows": 547,
+   "bytes": 175542
+  },
+  "texts/dnyaneshwari/ch09-2.json": {
+   "rows": 20,
+   "bytes": 6503
+  },
+  "texts/dnyaneshwari/ch10.json": {
+   "rows": 378,
+   "bytes": 121525
+  },
+  "texts/dnyaneshwari/ch11-1.json": {
+   "rows": 515,
+   "bytes": 171617
+  },
+  "texts/dnyaneshwari/ch11-2.json": {
+   "rows": 249,
+   "bytes": 79462
+  },
+  "texts/dnyaneshwari/ch12.json": {
+   "rows": 268,
+   "bytes": 77377
+  },
+  "texts/dnyaneshwari/ch13-1.json": {
+   "rows": 753,
+   "bytes": 213128
+  },
+  "texts/dnyaneshwari/ch13-2.json": {
+   "rows": 437,
+   "bytes": 125813
+  },
+  "texts/dnyaneshwari/ch14.json": {
+   "rows": 443,
+   "bytes": 126590
+  },
+  "texts/dnyaneshwari/ch15-1.json": {
+   "rows": 573,
+   "bytes": 172857
+  },
+  "texts/dnyaneshwari/ch15-2.json": {
+   "rows": 47,
+   "bytes": 14728
+  },
+  "texts/dnyaneshwari/ch16.json": {
+   "rows": 498,
+   "bytes": 148601
+  },
+  "texts/dnyaneshwari/ch17.json": {
+   "rows": 462,
+   "bytes": 138250
+  },
+  "texts/dnyaneshwari/ch18-1.json": {
+   "rows": 569,
+   "bytes": 172058
+  },
+  "texts/dnyaneshwari/ch18-2.json": {
+   "rows": 574,
+   "bytes": 171407
+  },
+  "texts/dnyaneshwari/ch18-3.json": {
+   "rows": 565,
+   "bytes": 172562
+  },
+  "texts/dnyaneshwari/ch18-4.json": {
+   "rows": 187,
+   "bytes": 57390
+  },
+  "texts/dnyaneshwari/index.json": {
+   "rows": 18,
+   "bytes": 20583
+  },
+  "texts/amritanubhav.json": {
+   "rows": 812,
+   "bytes": 131101
+  },
+  "texts/amritanubhav-amrw01.json": {
+   "rows": 69,
+   "bytes": 19450
+  },
+  "texts/changdev-pasashti.json": {
+   "rows": 65,
+   "bytes": 17354
+  },
+  "texts/haripath.json": {
+   "rows": 29,
+   "bytes": 30797
+  },
+  "gatha/p001.json": {
+   "rows": 29,
+   "bytes": 143830
+  },
+  "gatha/p002.json": {
+   "rows": 28,
+   "bytes": 142676
+  },
+  "gatha/p003.json": {
+   "rows": 18,
+   "bytes": 146257
+  },
+  "gatha/p004.json": {
+   "rows": 29,
+   "bytes": 141571
+  },
+  "gatha/p005.json": {
+   "rows": 17,
+   "bytes": 115882
+  },
+  "gatha/p006.json": {
+   "rows": 21,
+   "bytes": 148409
+  },
+  "gatha/p007.json": {
+   "rows": 31,
+   "bytes": 146566
+  },
+  "gatha/p008.json": {
+   "rows": 62,
+   "bytes": 148280
+  },
+  "gatha/p009.json": {
+   "rows": 67,
+   "bytes": 148342
+  },
+  "gatha/p010.json": {
+   "rows": 66,
+   "bytes": 149487
+  },
+  "gatha/p011.json": {
+   "rows": 26,
+   "bytes": 146198
+  },
+  "gatha/p012.json": {
+   "rows": 29,
+   "bytes": 140843
+  },
+  "gatha/p013.json": {
+   "rows": 26,
+   "bytes": 147852
+  },
+  "gatha/p014.json": {
+   "rows": 28,
+   "bytes": 148248
+  },
+  "gatha/p015.json": {
+   "rows": 25,
+   "bytes": 149742
+  },
+  "gatha/p016.json": {
+   "rows": 30,
+   "bytes": 149996
+  },
+  "gatha/p017.json": {
+   "rows": 26,
+   "bytes": 142970
+  },
+  "gatha/p018.json": {
+   "rows": 31,
+   "bytes": 149341
+  },
+  "gatha/p019.json": {
+   "rows": 20,
+   "bytes": 137020
+  },
+  "gatha/p020.json": {
+   "rows": 26,
+   "bytes": 146361
+  },
+  "gatha/p021.json": {
+   "rows": 32,
+   "bytes": 149631
+  },
+  "gatha/p022.json": {
+   "rows": 31,
+   "bytes": 145924
+  },
+  "gatha/p023.json": {
+   "rows": 26,
+   "bytes": 148525
+  },
+  "gatha/p024.json": {
+   "rows": 27,
+   "bytes": 138751
+  },
+  "gatha/p025.json": {
+   "rows": 25,
+   "bytes": 145799
+  },
+  "gatha/p026.json": {
+   "rows": 25,
+   "bytes": 145916
+  },
+  "gatha/p027.json": {
+   "rows": 29,
+   "bytes": 148556
+  },
+  "gatha/p028.json": {
+   "rows": 31,
+   "bytes": 145746
+  },
+  "gatha/p029.json": {
+   "rows": 35,
+   "bytes": 147759
+  },
+  "gatha/p030.json": {
+   "rows": 36,
+   "bytes": 147727
+  },
+  "gatha/p031.json": {
+   "rows": 39,
+   "bytes": 149745
+  },
+  "gatha/p032.json": {
+   "rows": 36,
+   "bytes": 146167
+  },
+  "gatha/p033.json": {
+   "rows": 35,
+   "bytes": 149768
+  },
+  "gatha/p034.json": {
+   "rows": 34,
+   "bytes": 147771
+  },
+  "gatha/p035.json": {
+   "rows": 29,
+   "bytes": 149157
+  },
+  "gatha/p036.json": {
+   "rows": 29,
+   "bytes": 145127
+  },
+  "gatha/p037.json": {
+   "rows": 30,
+   "bytes": 148910
+  },
+  "gatha/p038.json": {
+   "rows": 27,
+   "bytes": 146323
+  },
+  "gatha/p039.json": {
+   "rows": 23,
+   "bytes": 126247
+  },
+  "gatha/p040.json": {
+   "rows": 13,
+   "bytes": 149610
+  },
+  "gatha/p041.json": {
+   "rows": 29,
+   "bytes": 145717
+  },
+  "gatha/p042.json": {
+   "rows": 25,
+   "bytes": 145911
+  },
+  "gatha/p043.json": {
+   "rows": 29,
+   "bytes": 148480
+  },
+  "gatha/p044.json": {
+   "rows": 29,
+   "bytes": 147031
+  },
+  "gatha/p045.json": {
+   "rows": 16,
+   "bytes": 58749
+  },
+  "gatha/lookup.json": {
+   "rows": 1355,
+   "bytes": 26803
+  },
+  "gatha/index.json": {
+   "rows": 1355,
+   "bytes": 290988
+  },
+  "links/people.json": {
+   "rows": 0,
+   "bytes": 81371
+  },
+  "links/divine_names.json": {
+   "rows": 0,
+   "bytes": 93544
+  },
+  "links/places_named.json": {
+   "rows": 0,
+   "bytes": 8951
+  },
+  "links/topics.json": {
+   "rows": 3535,
+   "bytes": 52411
+  },
+  "links/scripture_other.json": {
+   "rows": 328,
+   "bytes": 102107
+  },
+  "links/gatha_segments.json": {
+   "rows": 0,
+   "bytes": 94331
+  },
+  "connections/narrated_by_others-1.json": {
+   "rows": 208,
+   "bytes": 199745
+  },
+  "connections/narrated_by_others-2.json": {
+   "rows": 192,
+   "bytes": 199597
+  },
+  "connections/narrated_by_others-3.json": {
+   "rows": 210,
+   "bytes": 199654
+  },
+  "connections/narrated_by_others-4.json": {
+   "rows": 291,
+   "bytes": 200288
+  },
+  "connections/narrated_by_others-5.json": {
+   "rows": 1,
+   "bytes": 506
+  },
+  "connections/dialogues.json": {
+   "rows": 241,
+   "bytes": 117521
+  },
+  "connections/cross_references.json": {
+   "rows": 18,
+   "bytes": 14647
+  },
+  "connections/reading_cards.json": {
+   "rows": 18,
+   "bytes": 6800
+  },
+  "connections/index.json": {
+   "rows": 4,
+   "bytes": 375
+  },
+  "evidence/classical_sources.json": {
+   "rows": 80,
+   "bytes": 36302
+  },
+  "evidence/sources.json": {
+   "rows": 193,
+   "bytes": 85292
+  },
+  "evidence/evidence.json": {
+   "rows": 125,
+   "bytes": 37558
+  },
+  "evidence/text_issues-1.json": {
+   "rows": 753,
+   "bytes": 200621
+  },
+  "evidence/text_issues-2.json": {
+   "rows": 639,
+   "bytes": 200494
+  },
+  "evidence/text_issues-3.json": {
+   "rows": 230,
+   "bytes": 83634
+  },
+  "evidence/text_issues_index.json": {
+   "rows": 1,
+   "bytes": 101
+  },
+  "evidence/search_log.json": {
+   "rows": 71,
+   "bytes": 14574
+  },
+  "evidence/catalogue.json": {
+   "rows": 196,
+   "bytes": 73811
+  },
+  "search/gatha-1.json": {
+   "rows": 250,
+   "bytes": 260125
+  },
+  "search/gatha-2.json": {
+   "rows": 356,
+   "bytes": 260301
+  },
+  "search/gatha-3.json": {
+   "rows": 318,
+   "bytes": 260190
+  },
+  "search/gatha-4.json": {
+   "rows": 297,
+   "bytes": 259789
+  },
+  "search/gatha-5.json": {
+   "rows": 134,
+   "bytes": 109928
+  },
+  "search/short-1.json": {
+   "rows": 975,
+   "bytes": 161831
+  },
+  "search/dw01-ch01.json": {
+   "rows": 321,
+   "bytes": 81208
+  },
+  "search/dw01-ch02.json": {
+   "rows": 446,
+   "bytes": 117307
+  },
+  "search/dw01-ch03.json": {
+   "rows": 318,
+   "bytes": 83027
+  },
+  "search/dw01-ch04.json": {
+   "rows": 266,
+   "bytes": 71604
+  },
+  "search/dw01-ch05.json": {
+   "rows": 208,
+   "bytes": 56023
+  },
+  "search/dw01-ch06.json": {
+   "rows": 540,
+   "bytes": 143589
+  },
+  "search/dw01-ch07.json": {
+   "rows": 240,
+   "bytes": 37387
+  },
+  "search/dw01-ch08.json": {
+   "rows": 295,
+   "bytes": 82641
+  },
+  "search/dw01-ch09.json": {
+   "rows": 567,
+   "bytes": 160022
+  },
+  "search/dw01-ch10.json": {
+   "rows": 378,
+   "bytes": 107099
+  },
+  "search/dw01-ch11.json": {
+   "rows": 764,
+   "bytes": 221598
+  },
+  "search/dw01-ch12.json": {
+   "rows": 268,
+   "bytes": 67121
+  },
+  "search/dw01-ch13-1.json": {
+   "rows": 1052,
+   "bytes": 260949
+  },
+  "search/dw01-ch13-2.json": {
+   "rows": 138,
+   "bytes": 35039
+  },
+  "search/dw01-ch14.json": {
+   "rows": 443,
+   "bytes": 109608
+  },
+  "search/dw01-ch15.json": {
+   "rows": 620,
+   "bytes": 163902
+  },
+  "search/dw01-ch16.json": {
+   "rows": 498,
+   "bytes": 129643
+  },
+  "search/dw01-ch17.json": {
+   "rows": 462,
+   "bytes": 120505
+  },
+  "search/dw01-ch18-1.json": {
+   "rows": 996,
+   "bytes": 260884
+  },
+  "search/dw01-ch18-2.json": {
+   "rows": 899,
+   "bytes": 239280
+  },
+  "search/index.json": {
+   "rows": 26,
+   "bytes": 3195
+  },
+  "gatha/daily-1.json": {
+   "rows": 49,
+   "bytes": 54352
+  },
+  "gatha/daily-2.json": {
+   "rows": 49,
+   "bytes": 56834
+  },
+  "gatha/daily-3.json": {
+   "rows": 49,
+   "bytes": 49538
+  },
+  "gatha/daily-4.json": {
+   "rows": 46,
+   "bytes": 52192
+  },
+  "home.json": {
+   "rows": 7,
+   "bytes": 8875
+  }
+ },
+ "warnings": []
+}
