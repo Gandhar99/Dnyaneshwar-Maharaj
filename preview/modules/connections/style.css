@@ -1,0 +1,66 @@
+/* Circle of saints. Every selector is scoped under .m-connections; colours only through the site variables. */
+.m-connections .ring-wrap { margin: var(--sp-4) 0 var(--sp-3); }
+.m-connections svg.ring { display: block; width: 100%; max-width: 28rem; height: auto; margin: 0 auto; overflow: visible; }
+.m-connections .ring .centre { fill: var(--maroon-soft); stroke: var(--maroon); stroke-width: 1.5; }
+.m-connections .ring .centre-t { fill: var(--ink); font-family: var(--f-text); font-size: 12.5px; text-anchor: middle; }
+.m-connections .ring .node { fill: var(--paper-3); stroke: var(--rule); stroke-width: 1.2; }
+.m-connections .ring .name { fill: var(--ink); font-family: var(--f-text); font-size: 14px; text-anchor: middle; }
+.m-connections .ring .pill-in { fill: var(--ink); }
+.m-connections .ring .pill-out { fill: var(--paper-3); stroke: var(--ink); stroke-width: 1.2; stroke-dasharray: 3 2; }
+.m-connections .ring .num-in { fill: var(--paper); font: 600 13px var(--f-ui); text-anchor: middle; }
+.m-connections .ring .num-out { fill: var(--ink); font: 600 13px var(--f-ui); text-anchor: middle; }
+.m-connections .ring .spoke-in { stroke: var(--ink-2); fill: none; }
+.m-connections .ring .spoke-out { stroke: var(--saffron); fill: none; stroke-dasharray: 5 4; }
+.m-connections .ring .arrow-in { fill: var(--ink-2); }
+.m-connections .ring .arrow-out { fill: var(--saffron); }
+.m-connections .legend { list-style: none; margin: 0 0 var(--sp-4); padding: 0; font-size: var(--s--1); color: var(--ink-2); display: grid; gap: .3rem; }
+.m-connections .legend li { display: flex; gap: .6rem; align-items: center; }
+.m-connections .legend svg { width: 2.4rem; height: .8rem; flex: none; }
+.m-connections .cn-tbl td.n, .m-connections .cn-tbl th.n { text-align: right; padding-right: .75rem; }
+.m-connections .cn-tbl td.n { white-space: nowrap; }
+.m-connections .cn-tbl a.cnt { font-weight: 600; font-size: var(--s-0); }
+.m-connections .cert { display: inline-block; font-size: .74rem; padding: .05rem .4rem; border-radius: var(--r-1); border: 1px solid var(--rule); color: var(--ink-2); }
+.m-connections .cert-medium, .m-connections .cert-low { border: 1px dashed var(--warn); color: var(--warn); }
+.m-connections .cert-low { border-style: dotted; font-style: italic; }
+.m-connections .rows { list-style: none; margin: 0; padding: 0; }
+.m-connections .rows > li { padding: .8rem 0; border-bottom: 1px solid var(--rule); }
+.m-connections .rows .fl { font-family: var(--f-text); font-size: var(--s-1); line-height: 1.5; display: block; margin-bottom: .2rem; overflow-wrap: anywhere; }
+.m-connections .rows .meta { display: flex; flex-wrap: wrap; gap: .25rem .6rem; align-items: center; font-size: .78rem; color: var(--ink-3); }
+.m-connections .rows a.fl { text-decoration: none; color: var(--ink); }
+.m-connections .rows a.fl:hover { color: var(--maroon); }
+.m-connections .rel { list-style: none; margin: 0; padding: 0; }
+.m-connections .rel > li { padding: .7rem 0; border-bottom: 1px solid var(--rule); }
+.m-connections .rel .who { font-family: var(--f-text); font-size: var(--s-1); }
+.m-connections .rel .what { color: var(--ink-2); font-size: var(--s--1); }
+.m-connections .rel .note-text { font-size: var(--s--1); color: var(--ink-2); margin: .2rem 0 0; }
+.m-connections .stats { display: flex; flex-wrap: wrap; gap: .4rem; margin: var(--sp-2) 0 var(--sp-3); }
+.m-connections .chunks { display: flex; flex-wrap: wrap; gap: .35rem; margin: .3rem 0 var(--sp-3); }
+.m-connections .chunks a, .m-connections .chunks span.c { font-size: .8rem; }
+.m-connections .voices { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-3); }
+.m-connections .voice { max-width: 92%; background: var(--paper-2); border-radius: var(--r-2); padding: .6rem .9rem .7rem; border-left: 4px solid var(--rule); }
+.m-connections .voice.right { justify-self: end; border-left: 0; border-right: 4px solid var(--saffron); }
+.m-connections .voice.left { justify-self: start; border-left-color: var(--maroon); }
+.m-connections .voice.mid { justify-self: center; max-width: 100%; width: 100%; border-left-color: var(--ink-3); background: transparent; border: 1px dashed var(--rule); }
+.m-connections .voice .sp { font-size: .78rem; color: var(--ink-2); font-weight: 600; margin-bottom: .1rem; display: flex; justify-content: space-between; gap: .75rem; flex-wrap: wrap; }
+.m-connections .voice .verse { font-size: var(--s-0); line-height: 1.85; }
+.m-connections .voice a.open { font-size: .76rem; font-weight: 400; }
+.m-connections .chain { list-style: none; margin: var(--sp-4) 0; padding: 0 0 0 .2rem; counter-reset: ch; }
+.m-connections .chain li { position: relative; padding: .15rem 0 1.1rem 2.2rem; font-family: var(--f-text); font-size: var(--s-1); }
+.m-connections .chain li::before { content: ""; position: absolute; left: .55rem; top: 1.1rem; bottom: -.1rem; width: 2px; background: var(--rule); }
+.m-connections .chain li:last-child::before { display: none; }
+.m-connections .chain li::after { content: ""; position: absolute; left: .1rem; top: .45rem; width: .95rem; height: .95rem; border-radius: 50%; background: var(--paper); border: 2px solid var(--saffron); }
+.m-connections .chain li.he::after { background: var(--saffron); }
+.m-connections .chain li small { display: block; font-family: var(--f-ui); font-size: .76rem; color: var(--ink-3); }
+.m-connections .dcards { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+.m-connections .dcards li { border-bottom: 1px solid var(--rule); }
+.m-connections .dcards a { display: block; padding: .85rem 0; text-decoration: none; color: var(--ink); }
+.m-connections .dcards .t { font-family: var(--f-text); font-size: var(--s-1); line-height: 1.35; display: block; }
+.m-connections .dcards a:hover .t { color: var(--maroon); }
+.m-connections .dcards .d { display: block; color: var(--ink-2); font-size: var(--s--1); }
+@media (min-width: 60rem) { .m-connections .voice { max-width: 75%; } }
+.m-connections .side { display: grid; gap: var(--sp-3); }
+@media (min-width: 46rem) { .m-connections .side { grid-template-columns: 1fr 1fr; } }
+.m-connections .side .pos { background: var(--paper-2); border-radius: var(--r-2); padding: .7rem .9rem; border-top: 3px solid var(--maroon); }
+.m-connections .chip.cert-medium { border-style: dashed; }
+.m-connections .chip.cert-low { border-style: dotted; font-style: italic; color: var(--ink-3); }
+.m-connections .rows .meta .cert + span { margin-left: 0; }

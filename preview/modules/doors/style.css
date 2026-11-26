@@ -1,0 +1,38 @@
+/* Doors group: every selector is scoped under .m-doors; colours only through the site variables. */
+.m-doors h2 { margin-top: var(--sp-5); }
+.m-doors .lead { font-size: var(--s-0); }
+.m-doors .steps { list-style: none; margin: var(--sp-4) 0 0; padding: 0; }
+.m-doors .step { border-top: 1px solid var(--rule); padding: var(--sp-4) 0 var(--sp-3); }
+.m-doors .step .sh { display: grid; grid-template-columns: 2rem 1fr; align-items: baseline; gap: var(--sp-2); margin: 0 0 var(--sp-2); font-size: var(--s-1); line-height: 1.4; }
+.m-doors .step .no { font-family: var(--f-text); color: var(--saffron); font-size: var(--s-2); line-height: 1; text-align: right; }
+.m-doors .step .st { overflow-wrap: anywhere; }
+.m-doors .say { margin: 0 0 var(--sp-2) 2.5rem; }
+.m-doors .step > .rowbox, .m-doors .step > p:last-child, .m-doors .step > .rowbox + .rowbox { margin-left: 2.5rem; }
+.m-doors .rowbox { background: var(--paper-2); border-radius: var(--r-2); padding: .6rem .8rem; margin: .5rem 0; overflow-wrap: anywhere; }
+.m-doors .rowbox.variant { border-left: 3px solid var(--saffron); border-radius: 0 var(--r-2) var(--r-2) 0; }
+.m-doors .rowbox .rt { margin: 0 0 .2rem; }
+.m-doors .rowbox .leaf { padding: var(--sp-4) var(--sp-3); }
+.m-doors .rowbox p { margin: .2rem 0; }
+.m-doors .route { font-size: var(--s-0); }
+.m-doors .chip.rid { font-family: var(--f-ui); color: var(--ink-3); }
+.m-doors .chips { display: flex; flex-wrap: wrap; gap: .35rem; margin: 0 0 .4rem; }
+.m-doors .dep { display: inline-flex; flex-wrap: wrap; gap: .25rem; align-items: center; }
+.m-doors .kv { margin: .3rem 0; }
+.m-doors .kv dd { min-width: 0; overflow-wrap: anywhere; }
+.m-doors .kids .say { font-size: var(--s-1); line-height: 1.7; }
+.m-doors .kids .step .sh { font-size: var(--s-2); }
+.m-doors .mock { border: 1px dashed var(--rule); border-radius: var(--r-2); padding: 2.2rem var(--sp-4) var(--sp-4); margin: var(--sp-4) 0; }
+.m-doors .mock .stub { background: var(--paper-2); }
+.m-doors .mock .stub ul { margin: .3rem 0 0; padding-left: 1.2rem; }
+.m-doors .mean { display: grid; grid-template-columns: max-content 1fr; gap: .4rem var(--sp-3); margin: 0; }
+.m-doors .mean dt { font-family: var(--f-text); font-size: var(--s-1); }
+.m-doors .mean dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+.m-doors .side { display: grid; gap: var(--sp-3); }
+@media (min-width: 50rem) { .m-doors .side { grid-template-columns: 1fr 1fr; } }
+.m-doors .ocr .ocl { display: block; }
+.m-doors mark.hit { background: var(--saffron-soft); color: var(--ink); padding: 0 .1em; border-radius: 2px; }
+.m-doors .slot { display: flex; align-items: center; justify-content: center; text-align: center; min-height: 12rem; margin: var(--sp-4) 0;
+  border: 2px dashed var(--rule); border-radius: var(--r-2); background: var(--paper-2); color: var(--ink-3); padding: var(--sp-4); }
+.m-doors .slot img { max-width: 100%; height: auto; border-radius: var(--r-2); }
+.m-doors .slot.audio { min-height: 4rem; margin: var(--sp-2) 0; }
+.m-doors .doors .tag { white-space: nowrap; }

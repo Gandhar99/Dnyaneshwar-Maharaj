@@ -1,0 +1,161 @@
+// Labels of the Evidence group (namespace 'ev').
+export const LABELS = {
+  mr: {
+    intro: 'येथे सर्व काही उघड आहे: कोणत्या प्रश्नावर मतभेद आहेत, कोणत्या स्रोतावर किती विश्वास ठेवावा, काय शोधले आणि काय सापडले नाही, आणि हे पोर्टल कसे बनले.',
+    crumb: 'पुरावे', back: 'पुरावे', notfound: 'हे पान सापडले नाही.',
+    'd.disputes': 'मतभेद', 'd.disputes.d': '{q} प्रश्नांवर {n} मते, प्रत्येक पुराव्यासह बाजूबाजूला',
+    'd.sources': 'स्रोत', 'd.sources.d': '{n} स्रोत: दर्जा आणि प्रत्यक्ष काय वाचले',
+    'd.coverage': 'काय शोधले, काय राहिले', 'd.coverage.d': '{n} उणिवा, {s} शोधांची नोंद',
+    'd.issues': 'पाठातील अडचणी', 'd.issues.d': '{n} नोंदी: पाठ वाचताना आढळलेले दोष',
+    'd.editions': 'आवृत्त्यांतील फरक', 'd.editions.d': 'गाथा तीन छापील आवृत्त्यांत कशी आहे',
+    'd.standard': 'पुराव्यांचे मानक', 'd.standard.d': 'दावे कसे प्रतवारीने लावले आहेत',
+    'd.how': 'हे कसे बनले', 'd.how.d': 'काय कुठून आले आणि काय तपासलेले नाही',
+    'd.downloads': 'खुली माहिती', 'd.downloads.d': 'सर्व JSON फाइल डाउनलोडसाठी',
+    // disputes
+    'ds.title': 'मतभेद', 'ds.lead': 'ज्या प्रश्नांवर अभ्यासकांचे आणि स्रोतांचे एकमत नाही, ते येथे आहेत. प्रत्येक मत त्याच्या पुराव्यासह बाजूबाजूला दिले आहे. पोर्टल कोणतेही मत निवडत नाही.',
+    'ds.note': 'प्रश्नाची नावे आणि मतांचे वर्णन सध्या फक्त इंग्रजीत आहे.',
+    'ds.positions': '{n} मते', 'ds.position': 'मत', 'ds.proponents': 'कोण म्हणतो', 'ds.for': 'पुरावा बाजूने', 'ds.against': 'पुरावा विरोधात',
+    'ds.view': 'स्रोतांत नोंदलेले मत', 'ds.view.note': 'हे मत स्रोताचे आहे, पोर्टलचे नाही.',
+    'ds.nochoice': 'या प्रश्नाचे एकच उत्तर पोर्टल देत नाही. पुरावा आणि स्रोत वर दिले आहेत.',
+    'ds.none': 'नोंद नाही', 'ds.all': 'सर्व मतभेद',
+    // sources
+    'so.title': 'स्रोत', 'so.lead': 'प्रत्येक स्रोताचा दर्जा आणि त्यातले प्रत्यक्ष काय वाचले गेले, हे येथे आहे. स्रोत अस्तित्वात असणे म्हणजे तो पूर्ण वाचला असे नव्हे.',
+    'so.find': 'स्रोत शोधा', 'so.tier': 'दर्जा', 'so.count': '{n} स्रोत', 'so.none': 'या अटींना जुळणारा स्रोत नाही.',
+    'so.read': 'प्रत्यक्ष काय वाचले', 'so.caution': 'सावधानता', 'so.rights': 'हक्कांची नोंद', 'so.author': 'लेखक किंवा प्रकाशक', 'so.year': 'वर्ष',
+    'so.checked': 'तपासल्याची तारीख', 'so.open': 'मूळ स्रोत उघडा', 'so.prev': 'आधीचा क्रमांक', 'so.host': 'संकेतस्थळ', 'so.cited': 'या मतभेदांत वापरला',
+    'so.tier.help': 'दर्जाचा अर्थ', 'so.nodepth': 'नोंद नाही',
+    // coverage
+    'co.title': 'काय शोधले, काय राहिले', 'co.lead': 'संशोधनात जे शोधले गेले आणि जे अजून राहिले आहे, ते येथे स्पष्ट सांगितले आहे. "सापडले नाही" याचा अर्थ "अस्तित्वात नाही" असा नाही.',
+    'co.gaps': 'उणिवा', 'co.area': 'क्षेत्र', 'co.included': 'काय समाविष्ट', 'co.limit': 'मर्यादा', 'co.next': 'पुढचे पाऊल',
+    'co.log': 'शोधांची नोंद', 'co.where': 'कुठे', 'co.query': 'काय शोधले', 'co.result': 'निकाल', 'co.date': 'दिनांक',
+    'co.excl': 'वगळलेले', 'co.excl.d': 'या नोंदी शोधात आल्या पण संत ज्ञानेश्वर महाराजांशी संबंधित नाहीत म्हणून वगळल्या.', 'co.reason': 'कारण',
+    // text issues
+    'ti.title': 'पाठातील अडचणी', 'ti.lead': 'ग्रंथांचे पाठ तपासताना आढळलेले दोष आणि शंका. या सर्वांचा अर्थ असा नाही की पाठ चुकीचा आहे; अनेक नोंदी फक्त "तपासून पाहा" अशा आहेत.',
+    'ti.loaded': '{a} पैकी {b} भाग आणले', 'ti.load': 'आणखी नोंदी आणा', 'ti.type': 'प्रकार', 'ti.doc': 'पाठ', 'ti.detail': 'तपशील', 'ti.action': 'पुढे काय',
+    'ti.all': 'सर्व प्रकार', 'ti.size': 'प्रत्येक भाग सुमारे २०० KB आहे.', 'ti.count': '{n} नोंदी',
+    // editions
+    'ed.title': 'आवृत्त्यांतील फरक', 'ed.lead': 'गाथा तीन छापील आवृत्त्यांतून जुळवली आहे. त्या एकमेकींपासून कशा वेगळ्या आहेत आणि प्रत्येकीत किती अभंग सापडले, ते येथे आहे.',
+    'ed.year': 'वर्ष', 'ed.editor': 'संपादक', 'ed.press': 'प्रकाशक व छापखाना', 'ed.highest': 'सर्वात मोठा छापलेला क्रमांक', 'ed.found': 'सापडलेले अभंग', 'ed.missing': 'क्रमांक न मिळालेले',
+    'ed.basis': 'आधार', 'ed.rel': 'इतर आवृत्त्यांशी नाते', 'ed.rights': 'हक्क', 'ed.scan': 'स्कॅन', 'ed.text': 'पाठ पोर्टलवर',
+    'ed.full': 'पूर्ण पाठ', 'ed.incipit': 'फक्त पहिली ओळ',
+    'ed.wit': 'किती आवृत्त्यांत प्रत्येक अभंग सापडतो', 'ed.wit.d': '{n} अभंगांपैकी:', 'ed.wit.k': '{k} आवृत्त्यांत: {n} अभंग', 'ed.wit.only': 'फक्त {w}', 'ed.wit.pair': '{w} आणि {x}',
+    'ed.note': 'आवृत्त्यांतील क्रमांक आणि मांडणी वेगळी आहे: १९५४ ची आवृत्ती विषयांप्रमाणे तीन भागांत आहे. कोणती आवृत्ती "मूळ" आहे, हे येथे ठरवलेले नाही.',
+    'ed.other': 'इतर नोंदलेल्या आवृत्त्या', 'ed.other.d': 'हे स्रोतांत नोंदवलेले संदर्भ आहेत; यांचा पाठ पोर्टलवर नाही.', 'ed.work': 'ग्रंथ',
+    // standard
+    'st.title': 'पुराव्यांचे मानक', 'st.lead': 'पोर्टलवरील प्रत्येक नोंदीला खालील खुणा असतात. त्यांचा अर्थ येथे दिला आहे.',
+    'st.claim': 'दाव्याची स्थिती', 'st.conf': 'पुष्टी', 'st.tier': 'स्रोताचा दर्जा', 'st.text': 'पाठाचा दर्जा', 'st.prov': 'तात्पुरती माहिती',
+    'st.prov.b': 'संपूर्ण माहिती सध्या तात्पुरती आहे. संशोधन चालू आहे आणि येणाऱ्या दिवसांत ही माहिती बदलली जाईल.',
+    'st.conf.b': 'पुष्टीची खूण फक्त सध्याच्या तथ्यांना (उदा. वारीचे वेळापत्रक) असते: एकच स्रोत, दोन स्रोत, किंवा तीन किंवा अधिक.',
+    'st.rights': 'हक्कांचा नियम', 'st.rights.b': 'पूर्ण पाठ फक्त विकिस्रोतावरील ग्रंथांचा (CC BY-SA 4.0) आणि गाथेच्या १९०८ च्या आवृत्तीचा दाखवला आहे. Sanskrit Documents वरील पाठ आणि गाथेच्या इतर आवृत्त्या यांची फक्त पहिली ओळ आहे.',
+    'st.depth': 'प्रत्यक्ष काय वाचले: दर्जा बरोबरच प्रत्येक स्रोतासाठी हे वेगळे सांगितले आहे. मोठा दर्जा असलेला स्रोतसुद्धा फक्त काही भागापुरता वाचला असू शकतो.',
+    // how made
+    'hm.asof': 'या पानावरील आकडे {d} रोजीच्या निर्यातीतून घेतले आहेत.', 'hm.title': 'हे कसे बनले', 'hm.lead': 'सोप्या शब्दांत: काय कुठून आले, काय यंत्रांनी केले, आणि काय अजून कोणीही तपासलेले नाही.',
+    // downloads
+    'dl.title': 'खुली माहिती', 'dl.lead': 'पोर्टलवरील सर्व माहिती JSON फाइलमध्ये खाली दिली आहे. कृपया "तात्पुरती माहिती" ही खूण आणि दाव्याची स्थिती सोबत ठेवा.',
+    'dl.exported': 'निर्यात दिनांक', 'dl.total': 'एकूण आकार', 'dl.files': '{n} फाइल', 'dl.rows': '{n} नोंदी', 'dl.manifest': 'सर्व फाइलींची यादी (manifest)',
+    'dl.rule': 'हक्कांचा नियम (निर्यातीत)', 'dl.licence': 'या संशोधन-माहितीचे सर्व हक्क सध्या राखीव आहेत. वाचन आणि अभ्यासापलीकडे वापर करण्यापूर्वी ग्रंथालयाची परवानगी घ्या. texts/ मधील विकिस्रोतावरील पाठ (ज्ञानेश्वरी, अमृतानुभव प्रकरण १, चांगदेव पासष्टी) CC BY-SA 4.0 परवान्याखालीच आहेत.',
+    'dl.dir': 'विभाग', 'dl.file': 'फाइल', 'dl.size': 'आकार', 'dl.root': 'मुख्य फाइल',
+  },
+  en: {
+    intro: 'Everything is open here: which questions are disputed, how far each source can be trusted, what was searched and not found, and how this portal was made.',
+    crumb: 'Evidence', back: 'Evidence', notfound: 'This page was not found.',
+    'd.disputes': 'Disputes', 'd.disputes.d': '{n} positions on {q} questions, each with its evidence side by side',
+    'd.sources': 'Sources', 'd.sources.d': '{n} sources: their quality tier and what was actually read',
+    'd.coverage': 'What was searched, what is left', 'd.coverage.d': '{n} gaps, {s} searches logged',
+    'd.issues': 'Text issues', 'd.issues.d': '{n} records: faults found while reading the texts',
+    'd.editions': 'How editions differ', 'd.editions.d': 'How the gatha stands in three printed editions',
+    'd.standard': 'The evidence standard', 'd.standard.d': 'How claims are graded',
+    'd.how': 'How this was made', 'd.how.d': 'What came from where, and what has not been checked',
+    'd.downloads': 'Open data', 'd.downloads.d': 'Every JSON file for download',
+    'ds.title': 'Disputes', 'ds.lead': 'Questions on which scholars and sources do not agree. Each position is given with its evidence, side by side. The portal does not choose one.',
+    'ds.note': '',
+    'ds.positions': '{n} positions', 'ds.position': 'Position', 'ds.proponents': 'Held by', 'ds.for': 'Evidence for', 'ds.against': 'Evidence against',
+    'ds.view': 'View stated in the sources', 'ds.view.note': 'This view belongs to the source, not to the portal.',
+    'ds.nochoice': 'The portal does not give one answer to this question. The evidence and sources are above.',
+    'ds.none': 'None recorded', 'ds.all': 'All disputes',
+    'so.title': 'Sources', 'so.lead': 'Each source\'s quality tier and what of it was actually read. A source existing does not mean it was read in full.',
+    'so.find': 'Search sources', 'so.tier': 'Tier', 'so.count': '{n} sources', 'so.none': 'No source matches these conditions.',
+    'so.read': 'What was actually read', 'so.caution': 'Caution', 'so.rights': 'Rights note', 'so.author': 'Author or publisher', 'so.year': 'Year',
+    'so.checked': 'Checked on', 'so.open': 'Open the source', 'so.prev': 'Earlier id', 'so.host': 'Site', 'so.cited': 'Used in these disputes',
+    'so.tier.help': 'What the tiers mean', 'so.nodepth': 'not recorded',
+    'co.title': 'What was searched, what is left', 'co.lead': 'What the research looked for, and what remains, stated plainly. "Not found" does not mean "does not exist".',
+    'co.gaps': 'Gaps', 'co.area': 'Area', 'co.included': 'Included', 'co.limit': 'Limitation', 'co.next': 'Next step',
+    'co.log': 'Search log', 'co.where': 'Where', 'co.query': 'Looked for', 'co.result': 'Result', 'co.date': 'Date',
+    'co.excl': 'Excluded', 'co.excl.d': 'These items turned up in searches but were left out because they are not about Dnyaneshwar.', 'co.reason': 'Reason',
+    'ti.title': 'Text issues', 'ti.lead': 'Faults and doubts found while checking the texts. They do not all mean the text is wrong; many only say "verify this".',
+    'ti.loaded': '{b} of {a} parts loaded', 'ti.load': 'Load more records', 'ti.type': 'Type', 'ti.doc': 'Text', 'ti.detail': 'Detail', 'ti.action': 'Next',
+    'ti.all': 'All types', 'ti.size': 'Each part is about 200 KB.', 'ti.count': '{n} records',
+    'ed.title': 'How editions differ', 'ed.lead': 'The gatha is collated from three printed editions. How they differ, and how many abhangas were found in each.',
+    'ed.year': 'Year', 'ed.editor': 'Editor', 'ed.press': 'Publisher and press', 'ed.highest': 'Highest printed number', 'ed.found': 'Abhangas found', 'ed.missing': 'Numbers not recovered',
+    'ed.basis': 'Basis', 'ed.rel': 'Relation to other editions', 'ed.rights': 'Rights', 'ed.scan': 'Scan', 'ed.text': 'Text on the portal',
+    'ed.full': 'Full text', 'ed.incipit': 'First line only',
+    'ed.wit': 'In how many editions each abhanga is found', 'ed.wit.d': 'Of {n} abhangas:', 'ed.wit.k': 'In {k} editions: {n} abhangas', 'ed.wit.only': '{w} only', 'ed.wit.pair': '{w} and {x}',
+    'ed.note': 'Numbering and arrangement differ: the 1954 edition is in three parts by subject. Which edition is "the original" is not decided here.',
+    'ed.other': 'Other editions on record', 'ed.other.d': 'These are references noted in the sources; their text is not on the portal.', 'ed.work': 'Work',
+    'st.title': 'The evidence standard', 'st.lead': 'Every record on the portal carries the marks below. Here is what they mean.',
+    'st.claim': 'Claim status', 'st.conf': 'Confirmation', 'st.tier': 'Source tier', 'st.text': 'Text quality', 'st.prov': 'Provisional',
+    'st.prov.b': 'All of the data is provisional. Research is continuing and it will change in the coming days.',
+    'st.conf.b': 'The confirmation mark appears only on current facts (for example the wari timetable): single source, two sources, or three or more.',
+    'st.rights': 'Rights rule', 'st.rights.b': 'Full text is shown only for the Wikisource texts (CC BY-SA 4.0) and the 1908 edition of the gatha. The Sanskrit Documents texts and the other gatha editions give the first line only.',
+    'st.depth': 'What was actually read: stated separately for every source, next to its tier. A source of a high tier may still have been read only in part.',
+    'hm.asof': 'The figures on this page are read from the data export of {d}.', 'hm.title': 'How this was made', 'hm.lead': 'In plain words: what came from where, what machines did, and what nobody has yet checked.',
+    'dl.title': 'Open data', 'dl.lead': 'All the data on the portal is below as JSON files. Please keep the "provisional" mark and the claim status with anything you reuse.',
+    'dl.exported': 'Exported on', 'dl.total': 'Total size', 'dl.files': '{n} files', 'dl.rows': '{n} rows', 'dl.manifest': 'List of all files (manifest)',
+    'dl.rule': 'Rights rule applied in the export', 'dl.licence': 'All rights in this research data are reserved for now. Ask the library before using it beyond reading and study. The Wikisource texts in texts/ (Dnyaneshwari, Amritanubhav chapter 1, Changdev Pasashti) remain under CC BY-SA 4.0.',
+    'dl.dir': 'Folder', 'dl.file': 'File', 'dl.size': 'Size', 'dl.root': 'Top level',
+  },
+};
+
+// "How this was made": [heading, [paragraphs]] per language.
+export const HOWMADE = {
+  mr: [
+    ['पहिले संशोधन-संकलन', [
+      'ज्ञानेश्वरी, अमृतानुभव, चांगदेव पासष्टी आणि हरिपाठ यांचे पाठ एका आधीच्या संशोधन-संकलनातून आले आहेत. ते विकिस्रोत आणि Sanskrit Documents वरून घेतले आहेत. त्यांचे स्रोत आणि दर्जा "स्रोत" पानावर आहेत.',
+      'त्या संकलनातील जुन्या तक्त्यांना (दावे, व्यक्ती, दर्जा इत्यादी) दाव्याची स्थिती ही खूण नाही. ती फक्त नंतरच्या नोंदींना आहे.']],
+    ['नोव्हेंबर २०२६ मधील यंत्र-साहाय्यित काम (तात्पुरते)', [
+      'नोव्हेंबर २०२६ मध्ये भाषा-प्रारूपांवर (AI एजंट) चालणाऱ्या कामातून गाथेचे संकलित पाठ, शब्दार्थ, चरित्र, स्थळे आणि मतभेदांच्या नोंदी तयार झाल्या. या सर्व नोंदी तात्पुरत्या आहेत आणि प्रत्येक नोंदीवर तशी खूण आहे.',
+      'ग्रंथालयाचे स्वतःचे संशोधन चालू आहे; येत्या दिवसांत ही माहिती त्यातून बदलली जाईल.']],
+    ['गाथेचा पाठ तीन छापील आवृत्त्यांतून कसा जुळवला', [
+      'गाथेचे {total} अभंग तीन छापील आवृत्त्यांच्या स्कॅनवरून ओळखले: साखरे यांचे गाथापंचक (१९०८), वर्ष नसलेले श्रीसकलसंतवाणी आणि तेलंग यांची सकल संत गाथा (१९५४).',
+      'पाठ १९०८ च्या आवृत्तीचा आधार घेऊन तयार केला. जेथे इतर दोन आवृत्त्या एकमेकांशी जुळतात, तेथे त्यांच्या मताने शब्द बदलला. यंत्राने वाचलेल्या (OCR) स्कॅनमधील चुका अशा सुधारल्या; पण सर्व नव्हेत.',
+      'पाठ असलेल्या {withtext} अभंगांपैकी {b3} तिन्ही आवृत्त्यांच्या तुलनेतून, {b2} दोन आवृत्त्यांच्या तुलनेतून आणि {b1} एकाच आवृत्तीच्या कच्च्या स्कॅन-पाठातून आहेत. एकूण शब्दांपैकी सुमारे {pct}% शब्द अपुष्ट आहेत ({tok} पैकी {unr} अनिर्णित आणि {unc} दुसरी साक्ष नसलेले).',
+      'पाठाचा दर्जा: अ {qa}, ब {qb}, क {qc}. "क" दर्जा म्हणजे बहुतेक कच्चा स्कॅन-पाठ.']],
+    ['काय कधीही पानाच्या प्रतिमेशी पडताळलेले नाही', [
+      'कोणताही पाठ छापील पानाच्या प्रतिमेशी जुळवून पाहिलेला नाही. छापील पानांचे क्रमांक अंदाजे आहेत आणि स्कॅनचा पानसंदर्भ (scan_leaf) कुठेही भरलेला नाही.',
+      'अभंगांचे विषय एका भाषा-प्रारूपाने (AI) कच्चा पाठ वाचून ठरवले आहेत; कोणीही ते तपासलेले नाहीत. नियमाने केलेली विषय-जोडणी अपूर्ण आणि चुकीची असू शकते.',
+      'शब्दार्थ: फक्त मोल्सवर्थ (१८५७) उघडून पाहिला. {gdict} नोंदी त्या उघडलेल्या नोंदीवर आधारित आहेत; {gctx} फक्त संदर्भावरून लावलेल्या (पुनर्रचना). इडा आणि पिंगळा यांवर शब्दकोश आणि योगग्रंथ यांत मतभेद आहे आणि तो तसाच नोंदला आहे.']],
+    ['राखून ठेवलेले पाठ (हक्क)', [
+      'पूर्ण पाठ फक्त विकिस्रोतावरील ग्रंथांचा आणि गाथेच्या १९०८ आवृत्तीचा दाखवला आहे. गाथेच्या इतर दोन आवृत्त्यांची आणि इतर साक्षीदारांची फक्त पहिली ओळ दिली आहे; कारण त्यांचे प्रकाशनहक्क स्पष्ट नाहीत.',
+      'Sanskrit Documents वरून घेतलेल्या पाठांबाबत (ज्ञानेश्वरीचा अध्याय ७, अमृतानुभवाची प्रकरणे ० आणि २ ते १०, हरिपाठ) त्या संकेतस्थळाच्या अटी केवळ वैयक्तिक अभ्यासाला परवानगी देतात, म्हणून त्यांची फक्त पहिली ओळ दाखवली आहे; पूर्ण पाठासाठी मूळ पानाचा दुवा दिला आहे.',
+      'विकिस्रोतावरील पाठ सोडता आधुनिक संकेतस्थळांवरून काहीही उतरवून घेतलेले नाही; स्रोतांतील छोटी अवतरणे "स्रोतातील शब्द" म्हणून, स्रोताच्या नावासह दिली आहेत.']],
+    ['परवाने', [
+      'विकिस्रोतावरील पाठ CC BY-SA 4.0 परवान्यावर आहेत; श्रेय देणे आणि तोच परवाना ठेवणे आवश्यक आहे. स्रोत: mr.wikisource.org.',
+      'टंक (Tiro Devanagari Marathi आणि Mukta) SIL Open Font License अंतर्गत आहेत; परवान्याच्या प्रती टंकांच्या फोल्डरमध्ये आहेत.',
+      'संशोधन-माहितीचे सर्व हक्क सध्या राखीव आहेत; "खुली माहिती" पान पाहा.']],
+  ],
+  en: [
+    ['The earlier research package', [
+      'The texts of the Dnyaneshwari, Amritanubhav, Changdev Pasashti and Haripath come from an earlier research package. They were taken from Wikisource and Sanskrit Documents. Their sources and tiers are on the Sources page.',
+      'The older tables of that package (claims, entities, quality and so on) carry no claim status. Only the later records do.']],
+    ['Work by model agents in November 2026 (provisional)', [
+      'In November 2026 work done by language-model agents (AI) produced the collated gatha texts, the glossary, the life, places and dispute records. All of these records are provisional and each is marked so.',
+      'The library\'s own research run is continuing and will replace this data within days.']],
+    ['How the gatha text was collated from three printed editions', [
+      'The {total} compositions of the gatha were identified from scans of three printed editions: Sakhare\'s Gathapanchak (1908), the undated Sakalsantvani and Telang\'s Sakal Sant Gatha (1954).',
+      'The text was built on the 1908 edition. Where the other two editions agree with each other, their reading replaced the 1908 word. Some scanning (OCR) errors were corrected this way, but not all.',
+      'Of the {withtext} abhangas with text, {b3} were built by comparing all three editions, {b2} by comparing two, and {b1} are the raw scan of a single edition. About {pct}% of all words are unconfirmed ({unr} unresolved and {unc} without a second witness, of {tok}).',
+      'Text quality: A {qa}, B {qb}, C {qc}. Grade C is mostly raw scan text.']],
+    ['What was never checked against page images', [
+      'No text has been checked against an image of the printed page. Printed page numbers are approximate and the scan leaf reference (scan_leaf) is empty everywhere.',
+      'The themes of the abhangas are a reading by a language model (AI) of the raw text; no person has checked them. The rule-based tagging of themes is incomplete and may be wrong.',
+      'Glossary: only Molesworth (1857) was opened. {gdict} entries rest on an opened entry; {gctx} are from context only (reconstruction). For ida and pingala the dictionary and yoga texts disagree, and the disagreement is recorded as it is.']],
+    ['Texts held back for rights', [
+      'Full text is shown only for the Wikisource texts and the 1908 edition of the gatha. For the other two gatha editions and other witnesses only the first line is given, because their publication rights are not clear.',
+      'The texts taken from Sanskrit Documents (Dnyaneshwari chapter 7, Amritanubhav chapters 0 and 2 to 10, the Haripath) are held back to their first line, because that site\'s terms permit personal study only; each links to the source page for the full text.',
+      'Apart from the Wikisource texts, nothing is reproduced from modern websites; short quotations from sources are marked as the source\'s wording and name the source.']],
+    ['Licences', [
+      'Texts from Wikisource are under CC BY-SA 4.0: attribution is required and the same licence must be kept. Source: mr.wikisource.org.',
+      'The fonts (Tiro Devanagari Marathi and Mukta) are under the SIL Open Font License; copies of the licences are in the fonts folder.',
+      'All rights in the research data are reserved for now; see the Open data page.']],
+  ],
+};
