@@ -13,7 +13,7 @@ const LICENCE = 'https://creativecommons.org/licenses/by-sa/4.0/';
 /** Source line under a text: Wikisource attribution (CC BY-SA) or the held-back note with a link. */
 export function sourceLine(doc) {
   if (!doc) return '';
-  const title = String(doc.title || '').replace(/\s*\([A-Za-z][^)]*\)\s*$/, '');   // drop English catalogue notes
+  const title = num(String(doc.title || '').replace(/\s*\([A-Za-z][^)]*\)\s*$/, ''), 'mr');   // drop English catalogue notes; the title is Marathi, so Devanagari digits
   if (isWikisource(doc.source_url)) {
     return `<p class="small faint">${esc(t('tx.ws.attr', { title }))} ` +
       `<a href="${esc(doc.source_url)}" target="_blank" rel="noopener">${esc(t('tx.dw.source'))}</a> · ` +

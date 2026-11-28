@@ -13,6 +13,8 @@ export const icon = {
   sections: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h9"/></svg>',
   moon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M19 14.5A7.5 7.5 0 0 1 9.5 5a7.5 7.5 0 1 0 9.5 9.5z"/></svg>',
   sun: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg>',
+  lamp: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5c2 2.6 2.4 4.6 0 6.3-2.4-1.7-2-3.7 0-6.3z"/><path d="M5 13.5h14c-1 3-3.8 4.6-7 4.6s-6-1.6-7-4.6z"/><path d="M12 18v2.5M9 20.5h6"/></svg>',
+  river: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 8c3-2 5 2 9 0s6 2 9 0"/><path d="M3 13c3-2 5 2 9 0s6 2 9 0"/><path d="M3 18c3-2 5 2 9 0s6 2 9 0"/></svg>',
   close: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>',
 };
 
@@ -128,7 +130,7 @@ export async function wsCredit(segIds) {
     w?.documents.forEach((d) => { if (!urls.has(d.document_id)) urls.set(d.document_id, d); });
   }
   const links = [...docs].sort().map((id) => urls.get(id)).filter((d) => d && /wikisource\.org/.test(d.source_url || ''))
-    .map((d) => `<a href="${esc(d.source_url)}" target="_blank" rel="noopener" lang="mr">${esc(String(d.title || d.document_id).replace(/\s*\([A-Za-z][^)]*\)\s*$/, ''))}</a>`);
+    .map((d) => `<a href="${esc(d.source_url)}" target="_blank" rel="noopener" lang="mr">${esc(num(String(d.title || d.document_id).replace(/\s*\([A-Za-z][^)]*\)\s*$/, ''), 'mr'))}</a>`);
   if (!links.length) return '';
   return `<p class="small faint">${esc(t('ws.credit'))} ${links.join(', ')} · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>`;
 }

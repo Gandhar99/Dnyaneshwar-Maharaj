@@ -3,6 +3,7 @@ import { t, lang, has } from '../../assets/js/i18n.js';
 import { esc, num } from '../../assets/js/util.js';
 import { getJSON } from '../../assets/js/data.js';
 import { honesty } from '../../assets/js/components.js';
+import { termHtml } from '../../assets/js/mr-terms.js';
 
 export const loadLife = () => getJSON('life.json');
 export const loadPlaces = () => getJSON('places.json');
@@ -63,7 +64,7 @@ export const fmtCoord = (lat, lon) => `${num(Number(lat).toFixed(4))}° N, ${num
 export function disputeCard(d) {
   return `<article class="card" data-id="${esc(d.dispute_id)}" title="${esc(d.dispute_id)}">
     <h4 class="small faint">${esc(t('life.dt.position'))}</h4>
-    <p class="pos" lang="en">${esc(d.position)}</p>
+    ${termHtml(d.position, 'p', 'class="pos"')}
     ${kv([[t('life.dt.proponents'), en(d.proponents)], [t('life.dt.for'), en(d.evidence_for)], [t('life.dt.against'), en(d.evidence_against)], [t('life.dt.view'), en(d.current_view_if_stated)]])}
     ${honesty(d)}${rowId(d.dispute_id)}</article>`;
 }

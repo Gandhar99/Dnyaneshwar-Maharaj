@@ -5,6 +5,7 @@ import { getJSON } from '../../assets/js/data.js';
 import { honesty } from '../../assets/js/components.js';
 import { SAINTS } from './pre.js';
 import { saintName, crumbs, shell, ruleNote, certMark, epLabel, slugOf } from './common.js';
+import { term } from '../../assets/js/mr-terms.js';
 
 const PAGE = 40;
 const rk = (k) => (k.startsWith('DW') ? +k.slice(2) : 100 + ['AMR', 'HP', 'CP'].indexOf(k));
@@ -23,7 +24,7 @@ export async function render(ctx, name) {
       ${honesty(r)}</li>`).join('')}</ul>` : `<p class="muted">${esc(t('cn.rel.none'))}</p>`;
   const disHtml = disputes.length ? `<h3>${esc(t('cn.dis.title'))}</h3>
       <div class="side">${disputes.map((d) => `<div class="pos" title="${esc(d.dispute_id)}">
-        <p lang="en"><strong>${esc(d.position)}</strong></p>
+        <p lang="${term(d.position).lang}"><strong>${esc(term(d.position).text)}</strong></p>
         ${d.proponents ? `<p class="small muted" lang="en">${esc(d.proponents)}</p>` : ''}
         ${d.evidence_against ? `<p class="small" lang="en">${esc(d.evidence_against)}</p>` : ''}
         ${honesty(d)}</div>`).join('')}</div>` : '';

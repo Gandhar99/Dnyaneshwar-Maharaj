@@ -5,6 +5,7 @@ import { getJSON } from '../../assets/js/data.js';
 import { norm } from '../../assets/js/search-norm.js';
 import { honesty, enText } from '../../assets/js/components.js';
 import { CSS, crumbs } from './common.js';
+import { term } from '../../assets/js/mr-terms.js';
 
 const tier = (s) => s.quality_tier || s.baseline_tier || '';
 const depth = (s) => s.read_depth || s.review_depth || '';
@@ -77,7 +78,7 @@ async function detail(ctx, rows, ev, id) {
       ${kv('ev.so.read', en(depth(s)) || esc(t('ev.so.nodepth')))}
       ${kv('ev.so.caution', en(s.caution))}${kv('ev.so.rights', en(s.rights_note))}${kv('ev.so.author', en(s.author))}
       ${kv('ev.so.year', en(s.year))}${kv('ev.so.host', esc(s.host))}${kv('ev.so.checked', esc(s.checked_on))}${kv('ev.so.prev', esc(s.previous_id))}
-      ${used.length ? kv('ev.so.cited', used.map((d) => `<a href="${href('evidence/disputes/' + (d.question || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''))}" lang="en">${esc(d.question)}</a>`).filter((v, i, a) => a.indexOf(v) === i).join(' · ')) : ''}
+      ${used.length ? kv('ev.so.cited', used.map((d) => `<a href="${href('evidence/disputes/' + (d.question || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''))}" lang="${term(d.question).lang}">${esc(term(d.question).text)}</a>`).filter((v, i, a) => a.indexOf(v) === i).join(' · ')) : ''}
     </dl>
     ${s.url ? `<p><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(t('ev.so.open'))}</a></p>` : ''}
     <p class="faint small">${esc(id)}</p>

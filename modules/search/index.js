@@ -49,7 +49,8 @@ export async function render(ctx) {
     const shards = idx.shards.filter((x) => sc.includes(x.group));
     const found = Object.fromEntries(GROUPS.map((g) => [g, []]));
     const nq = norm(query);
-    const dwChapters = [...new Set(shards.filter((x) => x.group === 'dw01').map((x) => x.chapter))];
+    const chOf = (x) => x.chapters || [x.chapter];   // a shard may hold several whole chapters
+    const dwChapters = [...new Set(shards.filter((x) => x.group === 'dw01').flatMap(chOf))];
     const doneCh = new Set();
     stopped = false;
     stop.hidden = !sc.includes('dw01');
@@ -68,7 +69,7 @@ export async function render(ctx) {
       if (my !== run) return;
       for (const r of rows) if (r.n.includes(nq)) found[sh.group].push(r);
       done++;
-      if (sh.group === 'dw01' && !shards.some((x, i) => i >= done && x.chapter === sh.chapter)) doneCh.add(sh.chapter);
+      if (sh.group === 'dw01') chOf(sh).forEach((c) => { if (!shards.some((x, i) => i >= done && chOf(x).includes(c))) doneCh.add(c); });
       paint(found, query, sc);
     }
     stop.hidden = true;

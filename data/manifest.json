@@ -1,5 +1,5 @@
 {
- "export_date": "2026-11-25T16:09:15Z",
+ "export_date": "2026-11-26T01:33:56Z",
  "source_db": "dnyaneshwar_portal.sqlite",
  "source_db_mtime": "2026-11-25T14:48:22Z",
  "rights_rule": {
@@ -65,7 +65,7 @@
   "web_discoveries": 99,
   "works": 89
  },
- "total_bytes": 16622201,
+ "total_bytes": 16814750,
  "files": {
   "life.json": {
    "rows": 156,
@@ -203,6 +203,10 @@
    "rows": 18,
    "bytes": 20583
   },
+  "texts/daily-ovi.json": {
+   "rows": 366,
+   "bytes": 89449
+  },
   "texts/amritanubhav.json": {
    "rows": 812,
    "bytes": 131101
@@ -220,192 +224,108 @@
    "bytes": 30797
   },
   "gatha/p001.json": {
-   "rows": 29,
-   "bytes": 143830
+   "rows": 55,
+   "bytes": 273903
   },
   "gatha/p002.json": {
-   "rows": 28,
-   "bytes": 142676
+   "rows": 43,
+   "bytes": 276323
   },
   "gatha/p003.json": {
-   "rows": 18,
-   "bytes": 146257
+   "rows": 41,
+   "bytes": 273853
   },
   "gatha/p004.json": {
-   "rows": 29,
-   "bytes": 141571
+   "rows": 85,
+   "bytes": 279317
   },
   "gatha/p005.json": {
-   "rows": 17,
-   "bytes": 115882
+   "rows": 128,
+   "bytes": 278832
   },
   "gatha/p006.json": {
-   "rows": 21,
-   "bytes": 148409
+   "rows": 57,
+   "bytes": 274806
   },
   "gatha/p007.json": {
-   "rows": 31,
-   "bytes": 146566
+   "rows": 52,
+   "bytes": 274491
   },
   "gatha/p008.json": {
-   "rows": 62,
-   "bytes": 148280
+   "rows": 48,
+   "bytes": 269377
   },
   "gatha/p009.json": {
-   "rows": 67,
-   "bytes": 148342
+   "rows": 53,
+   "bytes": 277937
   },
   "gatha/p010.json": {
-   "rows": 66,
-   "bytes": 149487
+   "rows": 47,
+   "bytes": 264662
   },
   "gatha/p011.json": {
-   "rows": 26,
-   "bytes": 146198
+   "rows": 55,
+   "bytes": 277890
   },
   "gatha/p012.json": {
-   "rows": 29,
-   "bytes": 140843
+   "rows": 55,
+   "bytes": 273893
   },
   "gatha/p013.json": {
-   "rows": 26,
-   "bytes": 147852
+   "rows": 49,
+   "bytes": 277492
   },
   "gatha/p014.json": {
-   "rows": 28,
-   "bytes": 148248
+   "rows": 47,
+   "bytes": 279335
   },
   "gatha/p015.json": {
-   "rows": 25,
-   "bytes": 149742
+   "rows": 63,
+   "bytes": 277986
   },
   "gatha/p016.json": {
-   "rows": 30,
-   "bytes": 149996
+   "rows": 67,
+   "bytes": 278343
   },
   "gatha/p017.json": {
-   "rows": 26,
-   "bytes": 142970
+   "rows": 71,
+   "bytes": 278245
   },
   "gatha/p018.json": {
-   "rows": 31,
-   "bytes": 149341
+   "rows": 63,
+   "bytes": 275871
   },
   "gatha/p019.json": {
-   "rows": 20,
-   "bytes": 137020
+   "rows": 55,
+   "bytes": 279367
   },
   "gatha/p020.json": {
-   "rows": 26,
-   "bytes": 146361
+   "rows": 53,
+   "bytes": 278030
   },
   "gatha/p021.json": {
-   "rows": 32,
-   "bytes": 149631
+   "rows": 35,
+   "bytes": 279146
   },
   "gatha/p022.json": {
-   "rows": 31,
-   "bytes": 145924
+   "rows": 53,
+   "bytes": 274343
   },
   "gatha/p023.json": {
-   "rows": 26,
-   "bytes": 148525
+   "rows": 54,
+   "bytes": 278350
   },
   "gatha/p024.json": {
-   "rows": 27,
-   "bytes": 138751
-  },
-  "gatha/p025.json": {
-   "rows": 25,
-   "bytes": 145799
-  },
-  "gatha/p026.json": {
-   "rows": 25,
-   "bytes": 145916
-  },
-  "gatha/p027.json": {
-   "rows": 29,
-   "bytes": 148556
-  },
-  "gatha/p028.json": {
-   "rows": 31,
-   "bytes": 145746
-  },
-  "gatha/p029.json": {
-   "rows": 35,
-   "bytes": 147759
-  },
-  "gatha/p030.json": {
-   "rows": 36,
-   "bytes": 147727
-  },
-  "gatha/p031.json": {
-   "rows": 39,
-   "bytes": 149745
-  },
-  "gatha/p032.json": {
-   "rows": 36,
-   "bytes": 146167
-  },
-  "gatha/p033.json": {
-   "rows": 35,
-   "bytes": 149768
-  },
-  "gatha/p034.json": {
-   "rows": 34,
-   "bytes": 147771
-  },
-  "gatha/p035.json": {
-   "rows": 29,
-   "bytes": 149157
-  },
-  "gatha/p036.json": {
-   "rows": 29,
-   "bytes": 145127
-  },
-  "gatha/p037.json": {
-   "rows": 30,
-   "bytes": 148910
-  },
-  "gatha/p038.json": {
-   "rows": 27,
-   "bytes": 146323
-  },
-  "gatha/p039.json": {
-   "rows": 23,
-   "bytes": 126247
-  },
-  "gatha/p040.json": {
-   "rows": 13,
-   "bytes": 149610
-  },
-  "gatha/p041.json": {
-   "rows": 29,
-   "bytes": 145717
-  },
-  "gatha/p042.json": {
-   "rows": 25,
-   "bytes": 145911
-  },
-  "gatha/p043.json": {
-   "rows": 29,
-   "bytes": 148480
-  },
-  "gatha/p044.json": {
-   "rows": 29,
-   "bytes": 147031
-  },
-  "gatha/p045.json": {
-   "rows": 16,
-   "bytes": 58749
+   "rows": 26,
+   "bytes": 107105
   },
   "gatha/lookup.json": {
    "rows": 1355,
-   "bytes": 26803
+   "bytes": 26543
   },
   "gatha/index.json": {
    "rows": 1355,
-   "bytes": 290988
+   "bytes": 290728
   },
   "links/people.json": {
    "rows": 0,
@@ -467,6 +387,10 @@
    "rows": 4,
    "bytes": 375
   },
+  "samadhi.json": {
+   "rows": 71,
+   "bytes": 102439
+  },
   "evidence/classical_sources.json": {
    "rows": 80,
    "bytes": 36302
@@ -504,132 +428,98 @@
    "bytes": 73811
   },
   "search/gatha-1.json": {
-   "rows": 250,
-   "bytes": 260125
+   "rows": 1101,
+   "bytes": 899910
   },
   "search/gatha-2.json": {
-   "rows": 356,
-   "bytes": 260301
-  },
-  "search/gatha-3.json": {
-   "rows": 318,
-   "bytes": 260190
-  },
-  "search/gatha-4.json": {
-   "rows": 297,
-   "bytes": 259789
-  },
-  "search/gatha-5.json": {
-   "rows": 134,
-   "bytes": 109928
+   "rows": 254,
+   "bytes": 250420
   },
   "search/short-1.json": {
    "rows": 975,
    "bytes": 161831
   },
-  "search/dw01-ch01.json": {
-   "rows": 321,
-   "bytes": 81208
+  "search/dw01-ch01-09.json": {
+   "rows": 3201,
+   "bytes": 832800
   },
-  "search/dw01-ch02.json": {
-   "rows": 446,
-   "bytes": 117307
+  "search/dw01-ch10-14.json": {
+   "rows": 3043,
+   "bytes": 801409
   },
-  "search/dw01-ch03.json": {
-   "rows": 318,
-   "bytes": 83027
+  "search/dw01-ch15-17.json": {
+   "rows": 1580,
+   "bytes": 414048
   },
-  "search/dw01-ch04.json": {
-   "rows": 266,
-   "bytes": 71604
-  },
-  "search/dw01-ch05.json": {
-   "rows": 208,
-   "bytes": 56023
-  },
-  "search/dw01-ch06.json": {
-   "rows": 540,
-   "bytes": 143589
-  },
-  "search/dw01-ch07.json": {
-   "rows": 240,
-   "bytes": 37387
-  },
-  "search/dw01-ch08.json": {
-   "rows": 295,
-   "bytes": 82641
-  },
-  "search/dw01-ch09.json": {
-   "rows": 567,
-   "bytes": 160022
-  },
-  "search/dw01-ch10.json": {
-   "rows": 378,
-   "bytes": 107099
-  },
-  "search/dw01-ch11.json": {
-   "rows": 764,
-   "bytes": 221598
-  },
-  "search/dw01-ch12.json": {
-   "rows": 268,
-   "bytes": 67121
-  },
-  "search/dw01-ch13-1.json": {
-   "rows": 1052,
-   "bytes": 260949
-  },
-  "search/dw01-ch13-2.json": {
-   "rows": 138,
-   "bytes": 35039
-  },
-  "search/dw01-ch14.json": {
-   "rows": 443,
-   "bytes": 109608
-  },
-  "search/dw01-ch15.json": {
-   "rows": 620,
-   "bytes": 163902
-  },
-  "search/dw01-ch16.json": {
-   "rows": 498,
-   "bytes": 129643
-  },
-  "search/dw01-ch17.json": {
-   "rows": 462,
-   "bytes": 120505
-  },
-  "search/dw01-ch18-1.json": {
-   "rows": 996,
-   "bytes": 260884
-  },
-  "search/dw01-ch18-2.json": {
-   "rows": 899,
-   "bytes": 239280
+  "search/dw01-ch18.json": {
+   "rows": 1895,
+   "bytes": 500163
   },
   "search/index.json": {
-   "rows": 26,
-   "bytes": 3195
+   "rows": 7,
+   "bytes": 1078
   },
   "gatha/daily-1.json": {
-   "rows": 49,
-   "bytes": 54352
+   "rows": 97,
+   "bytes": 110441
   },
   "gatha/daily-2.json": {
-   "rows": 49,
-   "bytes": 56834
-  },
-  "gatha/daily-3.json": {
-   "rows": 49,
-   "bytes": 49538
-  },
-  "gatha/daily-4.json": {
-   "rows": 46,
-   "bytes": 52192
+   "rows": 96,
+   "bytes": 102473
   },
   "home.json": {
    "rows": 7,
-   "bytes": 8875
+   "bytes": 12215
+  }
+ },
+ "media": {
+  "n_files": 43,
+  "bytes": 7076015,
+  "photos": 21,
+  "files": {
+   "alandi-ghat-s.jpg": 18920,
+   "alandi-ghat.jpg": 124373,
+   "alandi-temple-s.jpg": 44271,
+   "alandi-temple.jpg": 265998,
+   "ashva-road-s.jpg": 40315,
+   "ashva-road.jpg": 337111,
+   "chandrabhaga-ghats-s.jpg": 50667,
+   "chandrabhaga-ghats.jpg": 334556,
+   "crowd-temple-s.jpg": 70322,
+   "crowd-temple.jpg": 439647,
+   "dindi-city-s.jpg": 57351,
+   "dindi-city.jpg": 335976,
+   "dindi-flags-s.jpg": 40532,
+   "dindi-flags.jpg": 205152,
+   "dnyaneshwari-mandir-s.jpg": 51861,
+   "dnyaneshwari-mandir.jpg": 266813,
+   "indrayani-dusk-s.jpg": 37528,
+   "indrayani-dusk.jpg": 195219,
+   "indrayani-weir-s.jpg": 36487,
+   "indrayani-weir.jpg": 269610,
+   "manuscript-1843-s.jpg": 85416,
+   "manuscript-1843.jpg": 615720,
+   "nagar-pradakshina-s.jpg": 44158,
+   "nagar-pradakshina.jpg": 272451,
+   "palkhi-alandi-s.jpg": 56191,
+   "palkhi-alandi.jpg": 220412,
+   "palkhi-petals-s.jpg": 59127,
+   "palkhi-petals.jpg": 296368,
+   "palkhi-rath-s.jpg": 71750,
+   "palkhi-rath.jpg": 403786,
+   "palkhi-saswad-s.jpg": 63050,
+   "palkhi-saswad.jpg": 264770,
+   "photos.json": 16512,
+   "ringan-crowd-s.jpg": 33449,
+   "ringan-crowd.jpg": 158954,
+   "ringan-horse-s.jpg": 29918,
+   "ringan-horse.jpg": 148345,
+   "talkari-s.jpg": 42548,
+   "talkari.jpg": 253650,
+   "wari-circle-s.jpg": 64191,
+   "wari-circle.jpg": 337978,
+   "wari-flags-s.jpg": 42855,
+   "wari-flags.jpg": 271707
   }
  },
  "warnings": []

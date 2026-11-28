@@ -4,6 +4,7 @@ import { esc, num, href } from '../../assets/js/util.js';
 import { getJSON, routeForSegment } from '../../assets/js/data.js';
 import { honesty, claimBadge, loading } from '../../assets/js/components.js';
 import { loadLife, loadPlaces, crumbs, lifeCrumb, enNote, cssLink, txt, en, kv, traditionLine, placeChips, splitSegs, certLabel, rowId } from './common.js';
+import { termHtml } from '../../assets/js/mr-terms.js';
 
 // Which package episode labels belong to which event. The labels are the package's own. Where the event row itself names
 // that cycle (narrated_in) the pairing rests on the data; the others (OWN) are this site's grouping and say so on the page.
@@ -62,7 +63,7 @@ async function eventPage(ctx, L, P, id) {
       [t('life.ev.narrated'), en(e.narrated_in)], [t('life.ev.earliest'), en(e.earliest_source_status)]])}
     ${rowId(e.event_id)}
     ${segs.length ? `<h2>${esc(t('life.ev.segs'))}</h2><p class="chips">${segLinks.join(' ')}</p><p class="small faint">${esc(t('life.ev.segs.note'))}</p>` : ''}
-    ${claims.length ? `<h2>${esc(t('life.ev.dates'))}</h2><p><a class="btn" href="${href('life/dates', { s: claims[0].subject })}">${esc(t('life.ev.dates.open'))} (<span lang="en">${esc(claims[0].subject)}</span>)</a></p>` : ''}
+    ${claims.length ? `<h2>${esc(t('life.ev.dates'))}</h2><p><a class="btn" href="${href('life/dates', { s: claims[0].subject })}">${esc(t('life.ev.dates.open'))} (${termHtml(claims[0].subject)})</a></p>` : ''}
     ${hasNar ? `<h2>${esc(t('life.ev.poems'))}</h2><div id="poems"><button type="button" class="btn" id="loadp">${esc(t('life.ev.poems.load'))}</button></div>` : ''}
     <nav class="pager" aria-label="${esc(t('next'))}">
       ${prev ? `<a href="${href('life/events/' + prev.event_id)}" rel="prev"><span class="small faint">${esc(t('prev'))}</span><br><span lang="en">${esc(prev.title)}</span></a>` : '<span></span>'}

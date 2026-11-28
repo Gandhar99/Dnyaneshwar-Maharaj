@@ -14,9 +14,10 @@ export const LABELS = {
     // disputes
     'ds.title': 'मतभेद', 'ds.lead': 'ज्या प्रश्नांवर अभ्यासकांचे आणि स्रोतांचे एकमत नाही, ते येथे आहेत. प्रत्येक मत त्याच्या पुराव्यासह बाजूबाजूला दिले आहे. पोर्टल कोणतेही मत निवडत नाही.',
     'ds.note': 'प्रश्नाची नावे आणि मतांचे वर्णन सध्या फक्त इंग्रजीत आहे.',
-    'ds.positions': '{n} मते', 'ds.position': 'मत', 'ds.proponents': 'कोण म्हणतो', 'ds.for': 'पुरावा बाजूने', 'ds.against': 'पुरावा विरोधात',
+    'ds.positions': '{n} मते', 'ds.position1': '{n} मत', 'ds.position': 'मत', 'ds.proponents': 'कोण म्हणतो', 'ds.for': 'पुरावा बाजूने', 'ds.against': 'पुरावा विरोधात',
     'ds.view': 'स्रोतांत नोंदलेले मत', 'ds.view.note': 'हे मत स्रोताचे आहे, पोर्टलचे नाही.',
     'ds.nochoice': 'या प्रश्नाचे एकच उत्तर पोर्टल देत नाही. पुरावा आणि स्रोत वर दिले आहेत.',
+    'ds.sky': 'वर स्रोतांतील मत "astronomy test pending" (खगोलीय तपासणी बाकी) असे नोंदलेले आहे. ‘आकाश आणि तिथी’ या पानावर या तिथीचे गणित आता दाखवले आहे: शके १२१८ ची कार्तिक वद्य त्रयोदशी दोन पद्धतींनी दोन वेगळ्या दिवशी येते, आणि कोणत्याही पद्धतीत गुरुवारी येत नाही. ते गणित आहे, निवाडा नव्हे.', 'ds.sky.link': 'गणित पाहा',
     'ds.none': 'नोंद नाही', 'ds.all': 'सर्व मतभेद',
     // sources
     'so.title': 'स्रोत', 'so.lead': 'प्रत्येक स्रोताचा दर्जा आणि त्यातले प्रत्यक्ष काय वाचले गेले, हे येथे आहे. स्रोत अस्तित्वात असणे म्हणजे तो पूर्ण वाचला असे नव्हे.',
@@ -46,7 +47,7 @@ export const LABELS = {
     'st.claim': 'दाव्याची स्थिती', 'st.conf': 'पुष्टी', 'st.tier': 'स्रोताचा दर्जा', 'st.text': 'पाठाचा दर्जा', 'st.prov': 'तात्पुरती माहिती',
     'st.prov.b': 'संपूर्ण माहिती सध्या तात्पुरती आहे. संशोधन चालू आहे आणि येणाऱ्या दिवसांत ही माहिती बदलली जाईल.',
     'st.conf.b': 'पुष्टीची खूण फक्त सध्याच्या तथ्यांना (उदा. वारीचे वेळापत्रक) असते: एकच स्रोत, दोन स्रोत, किंवा तीन किंवा अधिक.',
-    'st.rights': 'हक्कांचा नियम', 'st.rights.b': 'पूर्ण पाठ फक्त विकिस्रोतावरील ग्रंथांचा (CC BY-SA 4.0) आणि गाथेच्या १९०८ च्या आवृत्तीचा दाखवला आहे. Sanskrit Documents वरील पाठ आणि गाथेच्या इतर आवृत्त्या यांची फक्त पहिली ओळ आहे.',
+    'st.rights': 'हक्कांचा नियम', 'st.rights.b': 'पूर्ण पाठ फक्त विकिस्रोतावरील ग्रंथांचा (CC BY-SA 4.0), गाथेच्या १९०८ च्या आवृत्तीचा आणि ई-साहित्य प्रतिष्ठानच्या प्रतीतील नामदेवांच्या समाधीच्या अभंगांचा दाखवला आहे. Sanskrit Documents वरील पाठ आणि गाथेच्या इतर आवृत्त्या यांची फक्त पहिली ओळ आहे.',
     'st.depth': 'प्रत्यक्ष काय वाचले: दर्जा बरोबरच प्रत्येक स्रोतासाठी हे वेगळे सांगितले आहे. मोठा दर्जा असलेला स्रोतसुद्धा फक्त काही भागापुरता वाचला असू शकतो.',
     // how made
     'hm.asof': 'या पानावरील आकडे {d} रोजीच्या निर्यातीतून घेतले आहेत.', 'hm.title': 'हे कसे बनले', 'hm.lead': 'सोप्या शब्दांत: काय कुठून आले, काय यंत्रांनी केले, आणि काय अजून कोणीही तपासलेले नाही.',
@@ -69,9 +70,10 @@ export const LABELS = {
     'd.downloads': 'Open data', 'd.downloads.d': 'Every JSON file for download',
     'ds.title': 'Disputes', 'ds.lead': 'Questions on which scholars and sources do not agree. Each position is given with its evidence, side by side. The portal does not choose one.',
     'ds.note': '',
-    'ds.positions': '{n} positions', 'ds.position': 'Position', 'ds.proponents': 'Held by', 'ds.for': 'Evidence for', 'ds.against': 'Evidence against',
+    'ds.positions': '{n} positions', 'ds.position1': '{n} position', 'ds.position': 'Position', 'ds.proponents': 'Held by', 'ds.for': 'Evidence for', 'ds.against': 'Evidence against',
     'ds.view': 'View stated in the sources', 'ds.view.note': 'This view belongs to the source, not to the portal.',
     'ds.nochoice': 'The portal does not give one answer to this question. The evidence and sources are above.',
+    'ds.sky': 'The note "astronomy test pending" above is the sources\' record. The sky page now shows the computation for this tithi: Kartik Vadya Trayodashi of Shaka 1218 falls on two different days by two methods, and on a Thursday by neither. It is a computation, not a verdict.', 'ds.sky.link': 'See the computation',
     'ds.none': 'None recorded', 'ds.all': 'All disputes',
     'so.title': 'Sources', 'so.lead': 'Each source\'s quality tier and what of it was actually read. A source existing does not mean it was read in full.',
     'so.find': 'Search sources', 'so.tier': 'Tier', 'so.count': '{n} sources', 'so.none': 'No source matches these conditions.',
@@ -96,7 +98,7 @@ export const LABELS = {
     'st.claim': 'Claim status', 'st.conf': 'Confirmation', 'st.tier': 'Source tier', 'st.text': 'Text quality', 'st.prov': 'Provisional',
     'st.prov.b': 'All of the data is provisional. Research is continuing and it will change in the coming days.',
     'st.conf.b': 'The confirmation mark appears only on current facts (for example the wari timetable): single source, two sources, or three or more.',
-    'st.rights': 'Rights rule', 'st.rights.b': 'Full text is shown only for the Wikisource texts (CC BY-SA 4.0) and the 1908 edition of the gatha. The Sanskrit Documents texts and the other gatha editions give the first line only.',
+    'st.rights': 'Rights rule', 'st.rights.b': "Full text is shown only for the Wikisource texts (CC BY-SA 4.0), the 1908 edition of the gatha and Namdev's samadhi abhangas from the e-Sahitya Pratishthan edition. The Sanskrit Documents texts and the other gatha editions give the first line only.",
     'st.depth': 'What was actually read: stated separately for every source, next to its tier. A source of a high tier may still have been read only in part.',
     'hm.asof': 'The figures on this page are read from the data export of {d}.', 'hm.title': 'How this was made', 'hm.lead': 'In plain words: what came from where, what machines did, and what nobody has yet checked.',
     'dl.title': 'Open data', 'dl.lead': 'All the data on the portal is below as JSON files. Please keep the "provisional" mark and the claim status with anything you reuse.',
@@ -125,12 +127,13 @@ export const HOWMADE = {
       'अभंगांचे विषय एका भाषा-प्रारूपाने (AI) कच्चा पाठ वाचून ठरवले आहेत; कोणीही ते तपासलेले नाहीत. नियमाने केलेली विषय-जोडणी अपूर्ण आणि चुकीची असू शकते.',
       'शब्दार्थ: फक्त मोल्सवर्थ (१८५७) उघडून पाहिला. {gdict} नोंदी त्या उघडलेल्या नोंदीवर आधारित आहेत; {gctx} फक्त संदर्भावरून लावलेल्या (पुनर्रचना). इडा आणि पिंगळा यांवर शब्दकोश आणि योगग्रंथ यांत मतभेद आहे आणि तो तसाच नोंदला आहे.']],
     ['राखून ठेवलेले पाठ (हक्क)', [
-      'पूर्ण पाठ फक्त विकिस्रोतावरील ग्रंथांचा आणि गाथेच्या १९०८ आवृत्तीचा दाखवला आहे. गाथेच्या इतर दोन आवृत्त्यांची आणि इतर साक्षीदारांची फक्त पहिली ओळ दिली आहे; कारण त्यांचे प्रकाशनहक्क स्पष्ट नाहीत.',
+      'पूर्ण पाठ फक्त विकिस्रोतावरील ग्रंथांचा, गाथेच्या १९०८ आवृत्तीचा आणि (समाधी सोहळ्याच्या पानांवर) ई-साहित्य प्रतिष्ठानच्या प्रतीतील नामदेवांच्या समाधीच्या अभंगांचा दाखवला आहे; ती प्रत मुक्तपणे वाटण्यास प्रकाशक परवानगी देतात. गाथेच्या इतर दोन आवृत्त्यांची आणि इतर साक्षीदारांची फक्त पहिली ओळ दिली आहे; कारण त्यांचे प्रकाशनहक्क स्पष्ट नाहीत.',
       'Sanskrit Documents वरून घेतलेल्या पाठांबाबत (ज्ञानेश्वरीचा अध्याय ७, अमृतानुभवाची प्रकरणे ० आणि २ ते १०, हरिपाठ) त्या संकेतस्थळाच्या अटी केवळ वैयक्तिक अभ्यासाला परवानगी देतात, म्हणून त्यांची फक्त पहिली ओळ दाखवली आहे; पूर्ण पाठासाठी मूळ पानाचा दुवा दिला आहे.',
-      'विकिस्रोतावरील पाठ सोडता आधुनिक संकेतस्थळांवरून काहीही उतरवून घेतलेले नाही; स्रोतांतील छोटी अवतरणे "स्रोतातील शब्द" म्हणून, स्रोताच्या नावासह दिली आहेत.']],
+      'विकिस्रोतावरील पाठ आणि वर उल्लेखलेली ई-साहित्यची प्रत सोडता आधुनिक संकेतस्थळांवरून काहीही उतरवून घेतलेले नाही; स्रोतांतील छोटी अवतरणे "स्रोतातील शब्द" म्हणून, स्रोताच्या नावासह दिली आहेत.']],
     ['परवाने', [
       'विकिस्रोतावरील पाठ CC BY-SA 4.0 परवान्यावर आहेत; श्रेय देणे आणि तोच परवाना ठेवणे आवश्यक आहे. स्रोत: mr.wikisource.org.',
       'टंक (Tiro Devanagari Marathi आणि Mukta) SIL Open Font License अंतर्गत आहेत; परवान्याच्या प्रती टंकांच्या फोल्डरमध्ये आहेत.',
+      'छायाचित्रे विकिमीडिया कॉमन्सवरील, मुक्त परवान्यांची (CC BY, CC BY-SA) आहेत; प्रत्येकाचे श्रेय छायाचित्राखाली आणि "श्रेय आणि परवाने" पानावर दिले आहे. माऊलींचे चित्र किंवा चेहरा कोठेही दाखवलेला नाही.',
       'संशोधन-माहितीचे सर्व हक्क सध्या राखीव आहेत; "खुली माहिती" पान पाहा.']],
   ],
   en: [
@@ -150,12 +153,13 @@ export const HOWMADE = {
       'The themes of the abhangas are a reading by a language model (AI) of the raw text; no person has checked them. The rule-based tagging of themes is incomplete and may be wrong.',
       'Glossary: only Molesworth (1857) was opened. {gdict} entries rest on an opened entry; {gctx} are from context only (reconstruction). For ida and pingala the dictionary and yoga texts disagree, and the disagreement is recorded as it is.']],
     ['Texts held back for rights', [
-      'Full text is shown only for the Wikisource texts and the 1908 edition of the gatha. For the other two gatha editions and other witnesses only the first line is given, because their publication rights are not clear.',
+      'Full text is shown only for the Wikisource texts, the 1908 edition of the gatha and, on the samadhi pages, Namdev\'s samadhi abhangas from the e-Sahitya Pratishthan edition, which its publisher allows to be shared. For the other two gatha editions and other witnesses only the first line is given, because their publication rights are not clear.',
       'The texts taken from Sanskrit Documents (Dnyaneshwari chapter 7, Amritanubhav chapters 0 and 2 to 10, the Haripath) are held back to their first line, because that site\'s terms permit personal study only; each links to the source page for the full text.',
-      'Apart from the Wikisource texts, nothing is reproduced from modern websites; short quotations from sources are marked as the source\'s wording and name the source.']],
+      'Apart from the Wikisource texts and the e-Sahitya edition named above, nothing is reproduced from modern websites; short quotations from sources are marked as the source\'s wording and name the source.']],
     ['Licences', [
       'Texts from Wikisource are under CC BY-SA 4.0: attribution is required and the same licence must be kept. Source: mr.wikisource.org.',
       'The fonts (Tiro Devanagari Marathi and Mukta) are under the SIL Open Font License; copies of the licences are in the fonts folder.',
+      'The photographs are from Wikimedia Commons under free licences (CC BY, CC BY-SA); each is credited under the picture and on the Credits page. No picture or face of the saint is shown anywhere.',
       'All rights in the research data are reserved for now; see the Open data page.']],
   ],
 };

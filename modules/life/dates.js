@@ -3,6 +3,7 @@ import { t } from '../../assets/js/i18n.js';
 import { esc, num, href } from '../../assets/js/util.js';
 import { honesty, loading } from '../../assets/js/components.js';
 import { loadLife, crumbs, lifeCrumb, enNote, cssLink, txt, en, kv, eraLabel, disputeCard, rowId } from './common.js';
+import { termHtml } from '../../assets/js/mr-terms.js';
 
 export async function render(ctx) {
   ctx.el.innerHTML = `<div class="page wide m-life">${cssLink()}${loading()}</div>`;
@@ -19,11 +20,11 @@ export async function render(ctx) {
     ${honesty(d)}${rowId(d.date_claim_id)}</article>`;
   const groups = shown.map((s) => {
     const rows = L.date_claims.filter((d) => d.subject === s);
-    return `<section aria-labelledby="s-${esc(rows[0].date_claim_id)}"><h3 id="s-${esc(rows[0].date_claim_id)}"><span lang="en">${esc(s)}</span> <small class="faint">${esc(t(rows.length === 1 ? 'life.dt.claim1' : 'life.dt.claims', { n: num(rows.length) }))}</small></h3>
+    return `<section aria-labelledby="s-${esc(rows[0].date_claim_id)}"><h3 id="s-${esc(rows[0].date_claim_id)}">${termHtml(s)} <small class="faint">${esc(t(rows.length === 1 ? 'life.dt.claim1' : 'life.dt.claims', { n: num(rows.length) }))}</small></h3>
       <div class="cards auto">${rows.map(card).join('')}</div></section>`;
   }).join('');
   const questions = [...new Set(L.disputes.map((d) => d.question))];
-  const disputes = `<h2>${esc(t('life.dt.disputes'))}</h2><p class="muted">${esc(t('life.dt.disputes.d'))}</p>` + questions.map((q) => `<h3><span lang="en">${esc(q)}</span></h3><div class="cards auto">${L.disputes.filter((d) => d.question === q).map(disputeCard).join('')}</div>`).join('');
+  const disputes = `<h2>${esc(t('life.dt.disputes'))}</h2><p class="muted">${esc(t('life.dt.disputes.d'))}</p>` + questions.map((q) => `<h3>${termHtml(q)}</h3><div class="cards auto">${L.disputes.filter((d) => d.question === q).map(disputeCard).join('')}</div>`).join('');
   ctx.el.innerHTML = `<div class="page wide m-life">${cssLink()}
     ${crumbs(lifeCrumb())}
     <h1 tabindex="-1">${esc(t('life.dt.title'))}</h1>

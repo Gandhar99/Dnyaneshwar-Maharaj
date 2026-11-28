@@ -4,6 +4,7 @@ import { t, lang } from '../../assets/js/i18n.js';
 import { esc, num, formatDate } from '../../assets/js/util.js';
 import { getJSON, gathaPoem } from '../../assets/js/data.js';
 import { honesty, enText, claimBadge, provisional, verseBlock, quality, confirmation, sourceChips } from '../../assets/js/components.js';
+import { termHtml } from '../../assets/js/mr-terms.js';
 
 // Gatha poems used in curated paths: the small "daily" files hold their reading text. Which file holds a poem changes
 // with every export, so all daily files named by home.json are read (about 220 KB in all) and, failing that, the poem page data.
@@ -160,7 +161,7 @@ export function refBlock(D, [type, id]) {
       const rows = D.disputes.filter((r) => r.question === id);
       if (!rows.length) return missing(id);
       const statuses = [...new Set(rows.map((r) => r.claim_status).filter(Boolean))];
-      return { head: `<span lang="en">${esc(id)}</span>`,
+      return { head: termHtml(id),
         body: `<div class="rowbox"><p class="small">${esc(t('dr.disp.n', { n: num(rows.length) }))}</p>
           <div class="badges">${statuses.map(claimBadge).join('')}${rows.some((r) => r.provisional) ? provisional() : ''}${rows.map((r) => rid(r.dispute_id)).join(' ')}</div></div>` };
     }
